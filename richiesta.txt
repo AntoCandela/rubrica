@@ -1,0 +1,8 @@
+Avevamo in mente di realizzare una rubrica telefonica.
+1) Creare una tabella con colonne nome, cognome, data di nascita, telefono, email
+2) Creare una pagina con un form (non importa molto la grafica, è importante il funzionamento)  con passaggio dei dati in post  per l'inserimento di un nuovo contatto
+3) Creare una pagina di elenco in cui vengono mostrati i contatti della rubrica presenti nella tabella. Prevedere la funzione di ricerca sul campo "cognome" e tramite ajax mostrare i risultati nella stessa pagina.
+
+[OPZIONALE] Modifica dei contatti. Partendo dalla pagina di elenco dei contatti, per ogni contatto aggiungere un'ultima colonna con un pulsante che, tramite il jquery, permetta di popolare un form di modifica della riga all'interno della stessa pagina.
+
+Tempistica: se possibile per lunedì.

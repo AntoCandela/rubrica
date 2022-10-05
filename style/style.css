@@ -1,0 +1,246 @@
+:root {
+    --text-color: #040403;
+    --header-color: #8EB897;
+    --hover-color: #9DDBAD;
+    --block-color: #C3E8BD;
+    --hard-green: #5B7553;
+}
+
+* {
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: rgb(157,219,215);
+    background: linear-gradient(90deg, rgba(157,219,215,1) 0%, rgba(189,195,232,1) 50%, rgba(157,219,215,1) 100%);
+}
+
+/* header */
+header {
+    width: auto;
+    height: 10%;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+/* section */
+section {
+    width: 100%;
+    margin-top: 5em;
+}
+
+/* footer */
+footer { 
+    margin-top: auto;
+    font-size: 0.9em;
+}
+
+/****************
+    INDEX
+****************/
+
+/* Home page blocks */
+
+.block {
+    width: 30%;
+    height: 60%;
+    margin: 8vh 10%;
+    float: left;
+    background-color: var(--block-color);
+    border-radius: 2em;
+    transition: all .3s ease-in-out;
+}
+
+.block:hover {
+    background-color: var(--hover-color);
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.block .text {
+    width: fit-content;
+    height: fit-content;
+    display: block;
+    margin: 5em auto;
+}
+
+.block p {
+    width: fit-content;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/****************
+    Inserisci
+****************/
+
+.form-page-section {
+    max-width: fit-content;
+    margin: 0 auto;
+    border-radius: 2rem;
+    padding: 2.25rem;
+    margin-top: 10vh;
+    background-color: var(--block-color);
+}
+
+form {
+    max-width: fit-content;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-areas: 'name name name' 'surname surname surname' 'email email email' 'cellphonenumber . birthdate' 'tasto-torna tasto tasto';
+    
+}
+
+/* name input */
+
+.name {
+    text-align: center;
+    grid-area: name;
+    margin-top: 3vh;
+}
+
+.name input {
+    width: 40vw;
+}
+
+/* surname input */
+
+.surname {
+    text-align: center;
+    grid-area: surname;
+    margin-top: 3vh;
+}
+
+.surname input {
+    width: 40vw;
+}
+
+/* email input */
+
+.email {
+    text-align: center;
+    grid-area: email;
+    margin-top: 3vh;
+}
+
+.email input {
+    width: 40vw;
+}
+
+/* cellphonenumber input */
+
+.cellphonenumber {
+    text-align: center;
+    grid-area: cellphonenumber;
+    margin-top: 3vh;
+}
+
+.cellphonenumber input {
+    width: 120%;
+}
+
+/* birthdate input */
+
+.birthdate {
+    text-align: center;
+    grid-area: birthdate;
+    margin-top: 3vh;
+}
+
+.birthdate input {
+    width: 75%;
+    margin-left: 15%;
+}
+
+/*submit*/
+
+.tasto-invia {
+    grid-area: tasto;
+}
+
+/*Go back*/
+.tasto-torna {
+    grid-area: tasto-torna;
+}
+/* measures */
+
+.user-input {
+    height: 8vh;
+}
+
+input {
+    border: none;
+    border-radius: 1em;
+    padding-left: 1vw;
+    background-color: var(--hover-color);
+    color: beige;
+    font-size: 1.2em;
+    height: 1.5em;
+}
+
+label {
+    font-size: 1.5em;
+    margin-bottom: 0.2em;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+
+/* Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+/*tasto*/
+
+.tasto-invia button {
+    background-color: var(--hover-color);
+    font-size: 1.1em;
+    color: var(--text-color);
+    display: block;
+    padding: 15px;
+    text-align: center;
+    border: none;
+    outline: 0;
+    border-radius: 1rem;
+    transition: 0.2s;
+    width: 10em;
+}
+
+.tasto-invia button:hover {
+    transform: scale(1.2);
+    cursor: pointer;    
+}
+
+.tasto-torna button {
+    background-color: var(--hover-color);
+    font-size: 1.1em;
+    color: var(--text-color);
+    display: block;
+    padding: 15px;
+    text-align: center;
+    border: none;
+    outline: 0;
+    border-radius: 1rem;
+    transition: 0.2s;
+    width: 10em;
+}
+
+.tasto-torna button:hover {
+    transform: scale(1.2);
+    cursor: pointer;    
+}
