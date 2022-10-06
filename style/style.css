@@ -244,3 +244,44 @@ input[type=number] {
     transform: scale(1.2);
     cursor: pointer;    
 }
+
+
+/* elenco.php - tabella */
+
+.tabella-visualizza {
+    margin-top: 4vh;
+    text-align: center;
+}
+
+.tabella-visualizza tr {
+    transition: all 0.2s ease-out;
+}
+
+.tabella-visualizza tr:nth-child(even){
+    background-color: #dcf4dd;
+}
+
+.tabella-visualizza tr:nth-child(odd){
+    background-color: #f2f2f2;
+}
+
+.tabella-visualizza tr:nth-child(even):hover {
+    background-color: #b7e1b8;
+}
+
+.tabella-visualizza tr:nth-child(odd):hover {
+    background-color: #d5d5d5;
+}
+
+.tabella-visualizza td {
+    border-radius: 2rem;
+}
+
+.tabella-visualizza th {
+    padding: 1vh 5vw;
+    text-align: left;
+    background-color: var(--header-color);
+    color: white;
+    border-radius: 2rem;
+
+}
