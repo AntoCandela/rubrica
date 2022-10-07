@@ -1,3 +1,4 @@
+<!-- de Oliveira Candela Antonio Tobias - 07/10/2022 -->
 <html>
    
     <head>
@@ -7,6 +8,8 @@
 
         <link rel="stylesheet" href="style/style.css">
         <script src="script/ricercaCognome.js"></script>
+        
+        <!-- Tutto ciò per girare la modifica dei dati in line. Jquery è stato usato -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
         <script src="script/modifica.js"></script>
 
@@ -27,6 +30,7 @@
             </div>
         </form>
 
+        <!-- PHP per generare la tabella-->
         <?php
             $servername = "localhost";
             $username = "root";
@@ -51,6 +55,8 @@
                 echo"<tr><th>ID</th> <th>Nome</th> <th>Cognome</th> <th>Data Nascita</th> <th>Numero</th> <th>Mail</th> </tr>";
 
                 while($row = mysqli_fetch_assoc($result)) {
+
+                    // tutti i valori="" vengono usati in modifica.js
                     echo "<tr id=\"".$row['ID']."\" data-nome=\"".$row['Nome']."\" data-cognome=\"".$row['Cognome']."\" data-dataNascita=\"".$row['DataNascita']."\" data-numero=\"".$row['Telefono']."\" data-email=\"".$row['Mail']."\">";
 
                     echo "<td>".$row['ID']."</td>" ;
@@ -67,7 +73,7 @@
                 echo "</table>";
                 
             } else {
-                echo "0 results";
+                echo "Nessun contatto";
             }
 
             mysqli_close($conn);

@@ -4,6 +4,7 @@
     $password = "";
     $dbname = "rubrica";
 
+    //prendo in post il cognome o parte d'esso
     if (isset($_POST['cognomePost'])) $cognomePost = $_POST['cognomePost']; else $cognomePost = null;
 
 

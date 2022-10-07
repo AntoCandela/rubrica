@@ -1,4 +1,6 @@
+<!-- de Oliveira Candela Antonio Tobias - 07/10/2022 -->
 <html>    
+
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,6 +15,7 @@
     
         <?php
 
+            // prendo in post le variabili necessarie
             if (isset($_POST['name'])) $name= $_POST['name']; else $name = null;
             if (isset($_POST['surname'])) $surname = $_POST['surname']; else $surname = null;
             if (isset($_POST['email'])) $email = $_POST['email']; else $email = null;
@@ -32,7 +35,7 @@
                 die("Connection failed: " . mysqli_connect_error());
             }
             
-            //insert into database
+            //creo la query e la giro
             $sql = "INSERT INTO contatto (Nome, Cognome, DataNascita, telefono, Mail)  VALUES ('$name', '$surname', '$birthdate', '$cellphonenumber', '$email')";
 
             if (mysqli_query($conn, $sql)) {

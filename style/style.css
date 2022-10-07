@@ -314,7 +314,7 @@ input[type=number] {
     cursor: pointer;  
 }
 
-.tasto-aggiorna, .tasto-cancella {
+.tasto-aggiorna, .tasto-annulla {
     background-color: var(--hover-color);
     font-size: 1em;
     color: var(--text-color);
