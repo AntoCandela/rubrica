@@ -106,4 +106,4 @@ $sql = "UPDATE contatto SET Nome = '$nome', Cognome = '$cognome', DataNascita = 
 
 Passo anche l'id.
 
-Una volta mandati aggiornati i dati, la tabella torna nel suo stato precedente con la riga aggiornata.
+Una volta mandati i dati aggiornati, la tabella torna nel suo stato precedente con la riga aggiornata.
