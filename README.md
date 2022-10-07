@@ -31,10 +31,10 @@ Dentro alla cartella `rubrica/database` si trovano i file `createDB.sql` e `popo
 
 Il sito si apre nella pagina index che ha presente due pulsanti;
 
-1. Inserisci un nuovo contatto  &rarr   `inserisci.html`.
-2. Visualizza la tua rubbrica   &rarr   `elenco.php`.
+1. Inserisci un nuovo contatto  →   `inserisci.html`.
+2. Visualizza la tua rubbrica   →   `elenco.php`.
 
-### 1. Inserisci un nuovo contatto
+### Inserisci un nuovo contatto
 
 In questa pagina (`inserisci.html`) è presente un form. Il form manda i dati in _post_ al file php `inserisciContatto.php`. Il codice dentro a `inserisciContatto.php` crea una conessione con il nostro database e inserisce i dati all'interno.
 
@@ -49,7 +49,7 @@ In questa pagina (`inserisci.html`) è presente un form. Il form manda i dati in
 
 Una volta inserito il contatto, dopo 2 secondi l'utente viene ridirezzionato alla home page `index.html`.
 
-### 2. Visualizza la tua rubbrica
+### Visualizza la tua rubbrica
 
 Dentro a questa pagina (`elenco.php`) troviamo un primo form di ricerca per cognome, dove in base a ciò che viene dato in input mostra sulla tabella soltanto i risultati simili (`LIKE`) presenti nel DataBase. Lo script che esegue questa ricerca e ritorna la tabella filtrata è presente dentro al file `script/ricercaCognome.js`, scritto in ajax;
 
@@ -82,7 +82,7 @@ $("body").on("click", ".tasto-aggiorna", function(){
         let email = $(this).parents("tr").find("input[name='edit_email']").val();
         
         //mando in post i valori pescati nel form. Guardare modifica.php!!!
-        **$.post( "modifica.php", {id: id, nome: nome, cognome: cognome, dataNascita: dataNascita, telefono: numero, email: email} );**
+        $.post( "modifica.php", {id: id, nome: nome, cognome: cognome, dataNascita: dataNascita, telefono: numero, email: email} );
 
         $(this).parents("tr").find("td:eq(1)").text(nome);  
         $(this).parents("tr").find("td:eq(2)").text(cognome);
@@ -107,5 +107,3 @@ $sql = "UPDATE contatto SET Nome = '$nome', Cognome = '$cognome', DataNascita = 
 Passo anche l'id.
 
 Una volta mandati aggiornati i dati, la tabella torna nel suo stato precedente con la riga aggiornata.
-
-[EOF]
