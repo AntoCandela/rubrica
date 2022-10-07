@@ -10,13 +10,12 @@ Antonio Tobias de Oliveira Candela
 
 ## risorse usate
 
-- Jquery [link](https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js).
 - Font: ROBOTO [link](https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap).
 - HTML
 - CSS
 - JavaScript
 - PHP
-- Jquery
+- Jquery [link](https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js).
 - AJAX
 
 ## Come orientarsi sul codice
