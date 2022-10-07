@@ -249,7 +249,6 @@ input[type=number] {
 /* elenco.php - tabella */
 
 .tabella-visualizza {
-    margin-top: 4vh;
     text-align: center;
 }
 
@@ -278,10 +277,61 @@ input[type=number] {
 }
 
 .tabella-visualizza th {
-    padding: 1vh 5vw;
+    padding: 1vh 5.5vw;
     text-align: left;
     background-color: var(--header-color);
     color: white;
     border-radius: 2rem;
+}
 
+.modifica-elenco {
+    padding: 0 10px;
+}
+
+/*FORM DELLA PAGINA RICERCA*/
+
+.form-ricerca {
+    display: flex;
+}
+
+/*TASTI E INPUT DEL MODIFICA*/
+
+.tasto-modifica {
+    background-color: var(--hover-color);
+    font-size: 1em;
+    color: var(--text-color);
+    display: block;
+    text-align: center;
+    border: none;
+    outline: 0;
+    border-radius: 1rem;
+    transition: 0.2s;
+    width: 10em;
+}
+
+.tasto-modifica:hover {
+    background-color: var(--block-color);
+    cursor: pointer;  
+}
+
+.tasto-aggiorna, .tasto-cancella {
+    background-color: var(--hover-color);
+    font-size: 1em;
+    color: var(--text-color);
+    display: block;
+    text-align: center;
+    border: none;
+    outline: 0;
+    border-radius: 1rem;
+    transition: 0.2s;
+    width: 35%;
+    float: left;
+}
+
+.input-modifica {
+    border: none;
+    color: grey;
+    font-size: 1em;
+    background-color: var(--hover-color);
+    text-align: center;
 }

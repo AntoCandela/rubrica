@@ -34,8 +34,6 @@
             
             //insert into database
             $sql = "INSERT INTO contatto (Nome, Cognome, DataNascita, telefono, Mail)  VALUES ('$name', '$surname', '$birthdate', '$cellphonenumber', '$email')";
-            
-            echo $sql;
 
             if (mysqli_query($conn, $sql)) {
                 echo "<p style='font-size : 40px; text-align: center ; margin-top: 200px'>Nuovo contatto inserito corretamente</p>";
