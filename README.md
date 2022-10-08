@@ -66,6 +66,7 @@ xmlhttp.open("POST", "ricerca.php", true);
 xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 xmlhttp.send("cognomePost="+cognome);
 ```
+Come si nota dentrneo al codice, i dati in _post_ vengono mandati alla pagina `ricerca.php`, dove ha presente la query di ricerca e ritorna la tabella filtrata.
 
 ### Modifica
 
